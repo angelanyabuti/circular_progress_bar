@@ -54,14 +54,13 @@ Route::get('duk-map', [\App\Http\Controllers\ShopController::class, 'map'])->nam
 Route::get('category/{productCategory}', [\App\Http\Controllers\ShopController::class, 'category'])->name('category');
 Route::get('categories', [\App\Http\Controllers\ShopController::class, 'categories'])->name('shop.categories');
 Route::get('industry/{industry}', \App\Http\Livewire\Shop\SingleIndustryComponent::class)->name('shop.industry');
-Route::get('my-cart', \App\Http\Livewire\Shop\CartComponent::class)->name('cart');
+Route::get('my-cart', [\App\Http\Controllers\ShopController::class, 'cart'])->name('cart');
 Route::get('my-orders', [\App\Http\Controllers\ShopController::class, 'orders'])->name('my.orders')->middleware('auth');
 Route::get('pay/{order}', \App\Http\Livewire\Shop\PaymentComponent::class)->name('pay');
 Route::get('checkout', [\App\Http\Controllers\ShopController::class, 'checkout'])->name('checkout')->middleware('auth');
 Route::get('confirm-received/{code}', [\App\Http\Controllers\ShopController::class, 'confirmReceived'])->name('confirmReceived');
 Route::get('confirmed-received/{code}', [\App\Http\Controllers\ShopController::class, 'confirmedReceived'])->name('confirmedReceived');
 Route::post('confirm-received/{code}', [\App\Http\Controllers\ShopController::class, 'confirmReceivedUpdate'])->name('updateConfirmReceived');
-
 
 /*ipay callbak*/
 Route::get('ipay-call-back',[\App\Http\Controllers\IpayController::class,'callBack'])->name('ipay.callBack');
