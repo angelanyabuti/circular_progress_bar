@@ -1,0 +1,213 @@
+.top-bar {
+    background: #214057;
+    padding-top: 15px;
+    color: #ffffff;
+}
+.wide-input {
+    height: calc(1.5em + 1rem + 2px);
+}
+.sahl-blue {
+    color: #214057;
+}
+
+.page-users-view table td {
+    padding-bottom: 0.8rem;
+    min-width: 140px;
+    word-break: break-word;
+}
+.widget-header {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.icon-sm {
+    width: 48px;
+    height: 48px;
+    line-height: 48px !important;
+    font-size: 20px;
+}
+.icon-xs, .icon-sm, .icon-md, .icon-lg {
+    display: inline-block;
+    text-align: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+}
+.kubwa{
+    font-size: 25px;
+}
+.widgets-wrap a{
+    text-decoration: none;
+}
+.widgets-wrap a:hover{
+    text-decoration: none;
+}
+.widget-header .notify {
+    position: absolute;
+    top: -3px;
+    right: -10px;
+}
+.notify {
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    display: inline-block;
+    padding: .25em .6em;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    border-radius: 3rem;
+    color: #214057;
+    border-color: #214057;
+    /*background-color: #fa3434;*/
+}
+
+.sahl-blue-bg {
+    background: #C5E6FF;
+}
+.btn-primary{
+    background: #214057;
+    border: #214057;
+}
+.form-rounded {
+    border-radius: 1rem;
+}
+.border-green {
+    border: 1px solid #1d643b;
+}
+
+.crl {
+    background: #1d643b;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.top-bar-drop {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.top-bar-drop:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/********************* Shopping Demo-4 **********************/
+.product-grid4, .product-grid4 .product-image4 {
+    position: relative
+}
+
+.product-grid4 {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .3s ease 0s
+}
+
+.product-grid4 .product-image4 a {
+    display: block
+}
+
+.product-grid4 .product-image4 img {
+    /*width: 100%;*/
+    /*height: 200px*/
+}
+
+.product-grid4 .pic-1 {
+    opacity: 1;
+    transition: all .5s ease-out 0s
+}
+
+.product-grid4 .pic-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s ease-out 0s
+}
+
+.product-grid4 .product-discount-label, .product-grid4 .product-new-label {
+    color: #fff;
+    background-color: #16a085;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    transition: all .3s
+}
+
+.product-grid4 .product-content {
+    /*padding: 25px*/
+}
+
+.product-grid4 .title {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 7px;
+    transition: all .3s ease 0s
+}
+
+.product-grid4 .title a {
+    color: #222
+}
+
+.product-grid4 .title a:hover {
+    color: #16a085;
+    text-decoration: none;
+}
+
+.product-grid4 .price {
+    color: #16a085;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0 2px 15px 0;
+    display: block
+}
+
+.product-grid4 .price span {
+    color: #909090;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: line-through;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block
+}
+
+.product-grid4 .add-to-cart {
+    border: 1px solid #e5e5e5;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #214057;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all .3s
+}
+
+/*.product-grid4:hover .add-to-cart{border:1px solid transparent;background:#16a085;color:#fff}*/
+.product-grid4 .add-to-cart:hover {
+    background-color: #505050;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 990px) {
+    .product-grid4 {
+        margin-bottom: 30px
+    }
+}
